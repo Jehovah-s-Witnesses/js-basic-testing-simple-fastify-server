@@ -209,11 +209,6 @@ server.register(
         const response = storage
           .filter(({ title }) => {
             if (searchQuery) {
-              console.log(
-                title,
-                searchQuery,
-                title.toLowerCase().includes(searchQuery.toLowerCase()),
-              );
               return title.toLowerCase().includes(searchQuery.toLowerCase());
             }
 
